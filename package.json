@@ -1,0 +1,20 @@
+{
+  "name": "document-hierarchy-tree-editor",
+  "version": "1.0.0",
+  "description": "A web app to upload documents, convert to Markdown, and edit hierarchy trees for better chunking",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["document", "markdown", "chunking", "hierarchy", "tree", "editor"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
