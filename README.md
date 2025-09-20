@@ -4,13 +4,15 @@ A web application for uploading documents, converting them to Markdown, and crea
 
 ## Features
 
-- **Document Upload**: Support for PDF, DOCX, PPTX, TXT, and MD files
-- **Markdown Conversion**: Uses Microsoft's MarkItDown library for document processing
+- **Document Upload**: Support for PDF, DOCX, PPTX, TXT, and MD files with Firebase Storage
+- **5 Parser Libraries**: Choose from MarkItDown, PyMuPDF, pdfplumber, pdfminer.six, and PyPDF
+- **Cloud Processing**: Files uploaded to Firebase Storage and processed in Firebase Functions
 - **Interactive Tree Editor**: Drag-and-drop interface for reorganizing document structure
 - **Live Preview**: Real-time Markdown preview with section highlighting
 - **Smart Chunking**: Configurable token-based chunking with overlap support
 - **Multiple Export Formats**: JSON and Markdown export options
 - **Responsive UI**: Modern, clean interface built with React and Tailwind CSS
+- **Production Ready**: Fully deployed on Firebase with Functions and Hosting
 
 ## Tech Stack
 
@@ -22,9 +24,10 @@ A web application for uploading documents, converting them to Markdown, and crea
 - **Lucide React** for icons
 
 ### Backend
-- **Node.js** with Express
-- **Microsoft MarkItDown** for document conversion
-- **Multer** for file uploads
+- **Firebase Functions** with Python runtime
+- **5 Document Parsers**: MarkItDown, PyMuPDF, pdfplumber, pdfminer.six, PyPDF
+- **Firebase Storage** for file uploads
+- **Node.js** with Express (for local development)
 
 ## Prerequisites
 
@@ -42,7 +45,14 @@ Before running this application, make sure you have:
    cd AutoChunker
    ```
 
-2. **Run the setup script** (handles everything automatically)
+2. **Configure Firebase credentials**
+   ```bash
+   cd client
+   cp env.example .env
+   # Edit .env with your Firebase credentials
+   ```
+
+3. **Run the setup script** (handles everything automatically)
    ```bash
    ./setup.sh
    ```

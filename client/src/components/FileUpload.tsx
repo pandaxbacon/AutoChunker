@@ -1,6 +1,8 @@
 import React, { useCallback, useState } from 'react';
 import { Upload, File, AlertCircle } from 'lucide-react';
 import { ProcessingState } from '../types';
+import { storage } from '../firebase';
+import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 
 interface FileUploadProps {
   onFileProcessed: (markdown: string, filename: string) => void;
@@ -40,22 +42,60 @@ const FileUpload: React.FC<FileUploadProps> = ({
     });
 
     try {
-      const formData = new FormData();
-      formData.append('document', file);
-      formData.append('parser', selectedParser);
+      // Step 1: Upload to Firebase Storage
+      const timestamp = Date.now();
+      const storageRef = ref(storage, `documents/${timestamp}-${file.name}`);
+      
+      const uploadTask = uploadBytesResumable(storageRef, file, {
+        contentType: file.type
+      });
+
+      // Wait for upload to complete
+      await new Promise<void>((resolve, reject) => {
+        uploadTask.on('state_changed', 
+          (snapshot) => {
+            const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+            console.log('Upload is ' + progress + '% done');
+          }, 
+          (error) => {
+            reject(error);
+          }, 
+          () => {
+            resolve();
+          }
+        );
+      });
+
+      // Step 2: Get download URL
+      const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
+      
+      // Step 3: Process document via our API
+      setProcessingState({
+        isUploading: false,
+        isProcessing: true,
+        error: null,
+        success: false
+      });
 
       const API_BASE = window.location.hostname === 'localhost' 
         ? '/api' 
         : 'https://us-central1-lumberjack-23104.cloudfunctions.net';
       
-      const response = await fetch(`${API_BASE}/upload`, {
+      const response = await fetch(`${API_BASE}/process`, {
         method: 'POST',
-        body: formData,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fileUrl: downloadURL,
+          fileName: file.name,
+          parser: selectedParser
+        }),
       });
 
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.error || 'Upload failed');
+        throw new Error(errorData.error || 'Processing failed');
       }
 
       const data = await response.json();
@@ -67,7 +107,7 @@ const FileUpload: React.FC<FileUploadProps> = ({
         success: true
       });
 
-      onFileProcessed(data.markdown, data.originalName);
+      onFileProcessed(data.markdown, data.originalName || file.name);
     } catch (error) {
       setProcessingState({
         isUploading: false,
@@ -76,7 +116,7 @@ const FileUpload: React.FC<FileUploadProps> = ({
         success: false
       });
     }
-  }, [onFileProcessed, processingState, setProcessingState]);
+  }, [onFileProcessed, processingState, setProcessingState, selectedParser]);
 
   const handleDrop = useCallback((e: React.DragEvent) => {
     e.preventDefault();
@@ -128,6 +168,10 @@ const FileUpload: React.FC<FileUploadProps> = ({
         <p className="mt-1 text-xs text-gray-500">
           Choose the best parser for your document type (PyMuPDF recommended)
         </p>
+        <div className="mt-2 p-2 bg-blue-50 border border-blue-200 rounded text-xs text-blue-800">
+          💡 <strong>Cloud Demo Note:</strong> Full document parsing requires heavy Python libraries. 
+          For best results, use the "Paste Markdown" option below or run locally for full features.
+        </div>
       </div>
 
       <div
@@ -153,7 +197,12 @@ const FileUpload: React.FC<FileUploadProps> = ({
           {processingState.isUploading ? (
             <div className="flex flex-col items-center space-y-2">
               <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary-600"></div>
-              <p className="text-sm text-gray-600">Processing document...</p>
+              <p className="text-sm text-gray-600">Uploading to Firebase Storage...</p>
+            </div>
+          ) : processingState.isProcessing ? (
+            <div className="flex flex-col items-center space-y-2">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary-600"></div>
+              <p className="text-sm text-gray-600">Processing document with {selectedParser}...</p>
             </div>
           ) : (
             <>

@@ -101,3 +101,25 @@ Thumbs.db
 __pycache__/
 *.py[cod]
 *$py.class
+venv/
+*/venv/
+
+# Firebase
+.firebaserc
+firebase-debug.log
+firebase-debug.*.log
+functions/__pycache__/
+
+# Testing and demo files
+parser_outputs/
+tree_images/
+server/pdf_previews/
+server/uploads/
+PARSER_COMPARISON.md
+TREE_ANALYSIS_RESULTS.md
+parser_trees.json
+test-*.js
+test-*.py
+
+# PDF files (for demo)
+*.pdf
