@@ -49,6 +49,28 @@ function App() {
     setSelectedNode(node);
   }, []);
 
+  const handleContentChange = useCallback((nodeId: string, newContent: string) => {
+    const updateNodeContent = (nodes: TreeNode[]): TreeNode[] => {
+      return nodes.map(node => {
+        if (node.id === nodeId) {
+          return { ...node, content: newContent };
+        }
+        if (node.children) {
+          return { ...node, children: updateNodeContent(node.children) };
+        }
+        return node;
+      });
+    };
+
+    const newTree = updateNodeContent(tree);
+    setTree(newTree);
+    
+    // Update selected node to reflect changes
+    if (selectedNode?.id === nodeId) {
+      setSelectedNode({ ...selectedNode, content: newContent });
+    }
+  }, [tree, selectedNode]);
+
   const handleReset = useCallback(() => {
     setCurrentStep('upload');
     setOriginalMarkdown('');
@@ -70,10 +92,10 @@ function App() {
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="text-center">
               <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                Document Hierarchy Tree Editor
+                Lumberjack
               </h1>
               <p className="text-lg text-gray-600 mb-8">
-                Upload documents, analyze their structure, and create optimized chunks for vector databases
+                Chop documents into perfect chunks for vector databases
               </p>
             </div>
 
@@ -108,7 +130,7 @@ function App() {
                     Editing: {originalFilename}
                   </h2>
                   <p className="text-sm text-gray-600">
-                    Drag and drop to reorganize the document structure
+                    Select sections to preview • Scroll to see all sections
                   </p>
                 </div>
                 <div className="flex space-x-2">
@@ -128,7 +150,7 @@ function App() {
               </div>
             </div>
 
-            <div className="flex-grow flex">
+            <div className="flex-grow flex min-h-0">
               <div className="w-1/2 border-r border-gray-200">
                 <SimpleTreeEditor
                   initialTree={tree}
@@ -142,6 +164,8 @@ function App() {
                   tree={tree}
                   selectedNode={selectedNode}
                   originalMarkdown={originalMarkdown}
+                  originalFilename={originalFilename}
+                  onContentChange={handleContentChange}
                 />
               </div>
             </div>
@@ -178,7 +202,7 @@ function App() {
               </div>
             </div>
 
-            <div className="flex-grow">
+            <div className="flex-grow min-h-0">
               <ChunkExporter tree={tree} originalFilename={originalFilename} />
             </div>
           </div>
@@ -196,9 +220,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
-              <TreePine className="h-8 w-8 text-primary-600" />
               <div>
-                <h1 className="text-xl font-bold text-gray-900">AutoChunker</h1>
+                <h1 className="text-xl font-bold text-gray-900">Lumberjack</h1>
                 <p className="text-sm text-gray-600">Document Hierarchy Tree Editor</p>
               </div>
             </div>
@@ -232,7 +255,7 @@ function App() {
               </div>
 
               <a
-                href="https://github.com"
+                href="https://github.com/pandaxbacon/AutoChunker"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-600"
@@ -251,7 +274,7 @@ function App() {
             {renderStepContent()}
           </div>
         ) : (
-          <div className="h-[calc(100vh-80px)]">
+          <div className="h-[calc(100vh-140px)] flex flex-col">
             {renderStepContent()}
           </div>
         )}

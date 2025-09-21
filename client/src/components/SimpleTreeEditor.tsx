@@ -19,6 +19,7 @@ interface TreeNodeProps {
   isSelected: boolean;
   expandedNodes: Set<string>;
   onToggleExpanded: (id: string) => void;
+  selectedNodeId?: string;
 }
 
 const TreeNodeComponent: React.FC<TreeNodeProps> = ({
@@ -29,7 +30,8 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({
   onEdit,
   isSelected,
   expandedNodes,
-  onToggleExpanded
+  onToggleExpanded,
+  selectedNodeId
 }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editTitle, setEditTitle] = useState(node.title);
@@ -163,6 +165,7 @@ const TreeNodeComponent: React.FC<TreeNodeProps> = ({
               isSelected={selectedNodeId === child.id}
               expandedNodes={expandedNodes}
               onToggleExpanded={onToggleExpanded}
+              selectedNodeId={selectedNodeId}
             />
           ))}
         </div>
@@ -178,8 +181,22 @@ const SimpleTreeEditor: React.FC<SimpleTreeEditorProps> = ({
   selectedNodeId
 }) => {
   const [tree, setTree] = useState<TreeNode[]>(initialTree);
-  const [expandedNodes, setExpandedNodes] = useState<Set<string>>(new Set());
+  const [expandedNodes, setExpandedNodes] = useState<Set<string>>(() => {
+    // Auto-expand first level by default
+    const initialExpanded = new Set<string>();
+    initialTree.forEach(node => {
+      if (node.children && node.children.length > 0) {
+        initialExpanded.add(node.id);
+      }
+    });
+    return initialExpanded;
+  });
   const [selectedNode, setSelectedNode] = useState<TreeNode | null>(null);
+
+  // Update tree when initialTree changes
+  React.useEffect(() => {
+    setTree(initialTree);
+  }, [initialTree]);
 
   const handleNodeSelect = useCallback((node: TreeNode) => {
     setSelectedNode(node);
@@ -266,7 +283,8 @@ const SimpleTreeEditor: React.FC<SimpleTreeEditorProps> = ({
   }, [tree]);
 
   return (
-    <div className="w-full h-full flex flex-col">
+    <div className="w-full h-full flex flex-col max-h-full">
+      {/* Header - Fixed */}
       <div className="flex-shrink-0 p-4 border-b border-gray-200 bg-gray-50">
         <div className="flex items-center justify-between">
           <h3 className="text-lg font-semibold text-gray-900">Document Hierarchy</h3>
@@ -276,14 +294,15 @@ const SimpleTreeEditor: React.FC<SimpleTreeEditorProps> = ({
               <span>{totalNodes} sections</span>
             </div>
             <div className="flex items-center space-x-1">
-              <span>~{totalTokens} tokens total</span>
+              <span>~{totalTokens.toLocaleString()} tokens</span>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="flex-grow overflow-auto p-4">
-        <div className="space-y-1">
+      {/* Scrollable Tree Content */}
+      <div className="flex-grow overflow-y-auto overflow-x-hidden p-4 min-h-0 bg-white">
+        <div className="space-y-1 pb-4">
           {tree.map((node) => (
             <TreeNodeComponent
               key={node.id}
@@ -295,6 +314,7 @@ const SimpleTreeEditor: React.FC<SimpleTreeEditorProps> = ({
               isSelected={selectedNodeId === node.id}
               expandedNodes={expandedNodes}
               onToggleExpanded={handleToggleExpanded}
+              selectedNodeId={selectedNodeId}
             />
           ))}
         </div>
