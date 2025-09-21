@@ -58,13 +58,82 @@
 - **Firebase Storage** for file uploads
 - **Node.js** with Express (for local development)
 
+## 🔥 Firebase Setup & Requirements
+
+### Required Firebase Services
+
+⚠️ **IMPORTANT**: You must enable these Firebase services and upgrade your plan:
+
+#### 1. **Firebase Storage** ⭐ **REQUIRED**
+- Navigate to: Firebase Console → Storage → Get started
+- **Action Required**: Click "Get started" and follow setup wizard
+- **Rules**: Will be deployed automatically via `firebase deploy --only storage`
+- **Usage**: Stores uploaded documents (PDF, DOCX, PPTX, TXT, MD files)
+
+#### 2. **Firebase Functions** ⭐ **REQUIRED** 
+- Navigate to: Firebase Console → Functions
+- **Plan Upgrade Required**: Must upgrade to **Blaze Plan (Pay-as-you-go)**
+- **Why**: Python functions require Blaze plan (Firebase free tier only supports Node.js)
+- **Cost**: Very low for typical usage (~$1-5/month for moderate use)
+
+#### 3. **Firebase Hosting** ⭐ **REQUIRED**
+- Navigate to: Firebase Console → Hosting → Get started  
+- **Action Required**: Follow setup wizard
+- **Usage**: Hosts the React web application
+
+### Setup Steps
+
+1. **Create Firebase Project**
+   - Visit [Firebase Console](https://console.firebase.google.com)
+   - Click "Create a project" or "Add project"
+   - Follow the 3-step wizard
+
+2. **Upgrade to Blaze Plan**
+   - In Firebase Console → Settings → Usage and billing
+   - Click "Modify plan" → Select "Blaze"
+   - Add payment method (required for Cloud Functions)
+
+3. **Enable Required Services**
+   - ✅ **Storage**: Firebase Console → Storage → "Get started"
+   - ✅ **Functions**: Will be enabled automatically when you deploy
+   - ✅ **Hosting**: Firebase Console → Hosting → "Get started"
+
+### Firebase APIs Used
+
+The application uses these 4 Firebase Function endpoints:
+
+| Endpoint | Method | Purpose | Parameters |
+|----------|--------|---------|------------|
+| `/health` | GET | Health check for Firebase Functions | None |
+| `/parsers` | GET | List available document parsers | None |  
+| `/markdown` | POST | Process markdown text directly | `{markdown: string}` |
+| `/process` | POST | Process uploaded documents from Firebase Storage | `{fileUrl: string, fileName: string, parser: string}` |
+
+### Cost Estimation
+
+**Typical Monthly Costs (Blaze Plan):**
+- **Functions**: $0.50-2.00 (based on usage)
+- **Storage**: $0.10-0.50 (1-5GB documents)
+- **Hosting**: Free (generous limits)
+- **Total**: ~$1-5/month for moderate usage
+
+**Free Tier Limits (included in Blaze):**
+- 2 million function invocations/month
+- 5GB Storage
+- 10GB Hosting transfer
+
 ## Prerequisites
 
 Before running this application, make sure you have:
 
 1. **Node.js** (version 16 or higher)
-2. **Python 3** (for MarkItDown)
-3. **pip** (Python package manager)
+2. **Firebase Project** with Blaze Plan (see Firebase Setup above)
+3. **Firebase CLI**: `npm install -g firebase-tools`
+4. **Git** for cloning the repository
+
+**For Local Development Only:**
+- **Python 3** (for local document parsing)
+- **pip** (Python package manager)
 
 ## Installation
 
