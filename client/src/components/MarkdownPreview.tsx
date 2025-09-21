@@ -14,8 +14,6 @@ interface MarkdownPreviewProps {
 const MarkdownPreview: React.FC<MarkdownPreviewProps> = ({ 
   tree, 
   selectedNode, 
-  originalMarkdown,
-  originalFilename,
   onContentChange 
 }) => {
   const [isEditing, setIsEditing] = useState(false);

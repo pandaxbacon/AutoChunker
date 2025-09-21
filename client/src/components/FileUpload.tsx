@@ -8,11 +8,6 @@ interface FileUploadProps {
   setProcessingState: (state: ProcessingState) => void;
 }
 
-interface Parser {
-  id: string;
-  name: string;
-  description: string;
-}
 
 const FileUpload: React.FC<FileUploadProps> = ({ 
   onFileProcessed, 
@@ -49,7 +44,11 @@ const FileUpload: React.FC<FileUploadProps> = ({
       formData.append('document', file);
       formData.append('parser', selectedParser);
 
-      const response = await fetch('/api/upload', {
+      const API_BASE = window.location.hostname === 'localhost' 
+        ? '/api' 
+        : 'https://us-central1-lumberjack-23104.cloudfunctions.net';
+      
+      const response = await fetch(`${API_BASE}/upload`, {
         method: 'POST',
         body: formData,
       });

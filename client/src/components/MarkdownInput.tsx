@@ -20,7 +20,11 @@ const MarkdownInput: React.FC<MarkdownInputProps> = ({ onMarkdownProcessed }) =>
     setError(null);
 
     try {
-      const response = await fetch('/api/markdown', {
+      const API_BASE = window.location.hostname === 'localhost' 
+        ? '/api' 
+        : 'https://us-central1-lumberjack-23104.cloudfunctions.net';
+      
+      const response = await fetch(`${API_BASE}/markdown`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

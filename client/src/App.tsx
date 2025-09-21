@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import FileUpload from './components/FileUpload';
 import MarkdownInput from './components/MarkdownInput';
 import SimpleTreeEditor from './components/SimpleTreeEditor';
@@ -6,7 +6,7 @@ import MarkdownPreview from './components/MarkdownPreview';
 import ChunkExporter from './components/ChunkExporter';
 import { TreeNode, ProcessingState } from './types';
 import { parseMarkdownToTree } from './utils/markdownParser';
-import { FileText, TreePine, Eye, Download, Github } from 'lucide-react';
+import { FileText, TreePine, Download, Github } from 'lucide-react';
 
 function App() {
   const [currentStep, setCurrentStep] = useState<'upload' | 'edit' | 'export'>('upload');

@@ -1,0 +1,17 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Allow uploads to documents folder with size limits
+    match /documents/{fileName} {
+      allow read: if true; // Public read for demo
+      allow write: if request.resource.size < 50 * 1024 * 1024 // 50MB limit
+                   && request.resource.contentType.matches('.*/(pdf|docx|pptx|txt|plain|markdown).*');
+    }
+    
+    // Allow uploads to processed folder (for parsed documents)
+    match /processed/{fileName} {
+      allow read, write: if true;
+    }
+  }
+}

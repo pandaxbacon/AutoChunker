@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Download, Settings, FileText, Package } from 'lucide-react';
+import { Settings, FileText, Package } from 'lucide-react';
 import { TreeNode, DocumentChunk } from '../types';
 import { estimateTokens } from '../utils/markdownParser';
 
