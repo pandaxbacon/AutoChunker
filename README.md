@@ -1,18 +1,47 @@
-# Document Hierarchy Tree Editor
+# 🪓 Lumberjack - Document Hierarchy Tree Editor
 
-A web application for uploading documents, converting them to Markdown, and creating an interactive hierarchy tree editor for optimal document chunking for vector databases.
+> Transform your documents into perfectly structured, AI-ready chunks with our intelligent document parser and interactive tree editor.
 
-## Features
+**🚀 [Try the Live Demo](https://lumberjack-23104.web.app)** - No setup required!
 
-- **Document Upload**: Support for PDF, DOCX, PPTX, TXT, and MD files with Firebase Storage
-- **5 Parser Libraries**: Choose from MarkItDown, PyMuPDF, pdfplumber, pdfminer.six, and PyPDF
-- **Cloud Processing**: Files uploaded to Firebase Storage and processed in Firebase Functions
-- **Interactive Tree Editor**: Drag-and-drop interface for reorganizing document structure
-- **Live Preview**: Real-time Markdown preview with section highlighting
-- **Smart Chunking**: Configurable token-based chunking with overlap support
-- **Multiple Export Formats**: JSON and Markdown export options
-- **Responsive UI**: Modern, clean interface built with React and Tailwind CSS
-- **Production Ready**: Fully deployed on Firebase with Functions and Hosting
+![Document Hierarchy](screenshots/document-hierarchy.png)
+
+## ✨ Features
+
+- **🔄 Multiple Document Formats**: Support for PDF, DOCX, PPTX, TXT, and MD files with Firebase Storage
+- **🤖 5 AI-Powered Parsers**: Choose from MarkItDown, PyMuPDF, pdfplumber, pdfminer.six, and PyPDF
+- **☁️ Cloud Processing**: Files uploaded to Firebase Storage and processed in Firebase Functions  
+- **🌳 Interactive Tree Editor**: Visualize and edit document hierarchy with expand/collapse
+- **📝 Real-time Editing**: Edit content directly with live markdown preview
+- **🎯 Smart Chunking**: Configurable token-based chunking with overlap support for vector databases
+- **📊 Analytics**: Real-time token counting, word counts, and document statistics
+- **🎨 Modern UI**: Beautiful, responsive interface built with React and Tailwind CSS
+- **🚀 Production Ready**: Fully deployed on Firebase with Functions and Hosting
+
+## 🎯 Perfect for
+
+- **AI/ML Engineers** preparing documents for vector databases
+- **Content Managers** organizing large document collections  
+- **Researchers** structuring academic papers and reports
+- **Developers** building RAG (Retrieval Augmented Generation) systems
+
+## 📸 Screenshots
+
+### Parser Selection & Document Upload
+![Parser Selection](screenshots/parser-selection.png)
+*Choose from 5 different document parsers, each optimized for different content types*
+
+### Interactive Document Navigation
+![Select Specific Node](screenshots/select-specific-node.png)
+*Navigate through your document structure with an intuitive tree interface*
+
+### Content Editing & Preview  
+![Edit Specific Node](screenshots/edit-specific-node.png)
+*Edit content directly with real-time token counting and markdown preview*
+
+### Smart Export Options
+![Export Screen](screenshots/export-screen.png)
+*Export perfectly sized chunks for your vector database or AI system*
 
 ## Tech Stack
 
@@ -44,6 +73,19 @@ Before running this application, make sure you have:
    git clone <repository-url>
    cd AutoChunker
    ```
+
+## 🚀 Quick Start
+
+### Option 1: Try the Live Demo (Recommended)
+**[🌐 https://lumberjack-23104.web.app](https://lumberjack-23104.web.app)**
+
+1. Click the demo link above
+2. Upload your document or paste markdown content  
+3. Choose your preferred parser (PyMuPDF recommended)
+4. Edit and export your structured content
+5. No setup required - works instantly!
+
+### Option 2: Run Locally
 
 2. **Configure Firebase credentials**
    ```bash
@@ -226,13 +268,62 @@ The backend is a simple Express server that:
 4. Test thoroughly
 5. Submit a pull request
 
-## License
+## 📊 Parser Comparison
 
-This project is licensed under the MIT License.
+| Parser | Speed | Structure | Tables | Images | Best For |
+|--------|-------|-----------|--------|---------|----------|
+| **PyMuPDF** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | General purpose, fast processing |
+| **pdfplumber** | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐ | Complex layouts, tables |
+| **MarkItDown** | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ | Microsoft documents |
+| **PyPDF** | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐⭐ | Lightweight, simple PDFs |
+| **pdfminer** | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | Complex layouts, research papers |
 
-## Acknowledgments
+## 🚀 Deployment
+
+```bash
+# Deploy everything (hosting + functions + storage rules)
+./deploy.sh
+
+# Or deploy individually  
+firebase deploy --only hosting
+firebase deploy --only functions
+firebase deploy --only storage
+```
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how to get started:
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙋‍♂️ Support & Links
+
+- **🌐 Live Demo**: [https://lumberjack-23104.web.app](https://lumberjack-23104.web.app)
+- **📖 Documentation**: Check our [Wiki](https://github.com/pandaxbacon/AutoChunker/wiki)  
+- **🐛 Issues**: Report bugs via [GitHub Issues](https://github.com/pandaxbacon/AutoChunker/issues)
+- **💬 Discussions**: Join our [GitHub Discussions](https://github.com/pandaxbacon/AutoChunker/discussions)
+
+## 🙏 Acknowledgments
 
 - Microsoft MarkItDown for document conversion
 - React DnD Treeview for the tree editing interface
 - Tailwind CSS for styling
 - Lucide React for icons
+
+---
+
+<div align="center">
+
+**Built with ❤️ for the AI community**
+
+[🚀 Try Live Demo](https://lumberjack-23104.web.app) • [📖 Documentation](https://github.com/pandaxbacon/AutoChunker/wiki) • [🐛 Report Bug](https://github.com/pandaxbacon/AutoChunker/issues) • [💡 Request Feature](https://github.com/pandaxbacon/AutoChunker/issues)
+
+</div>
