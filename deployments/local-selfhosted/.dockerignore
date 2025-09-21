@@ -1,0 +1,32 @@
+node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+.git
+.gitignore
+README.md
+.env
+.nyc_output
+coverage
+.nyc_output
+.coverage
+.vscode
+.idea
+
+# Client build artifacts (we copy the built version)
+client/node_modules
+client/dist
+
+# Server artifacts
+server/node_modules
+server/uploads
+server/*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

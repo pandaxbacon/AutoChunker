@@ -1,43 +1,48 @@
 #!/bin/bash
 
-# Simple Firebase deployment script for Lumberjack
-echo "🪓 Deploying Lumberjack to Firebase..."
+# Lumberjack - Deployment Selector
+# Choose between Firebase Cloud or Local Self-Hosted deployment
 
-# Colors for output
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-RED='\033[0;31m'
-NC='\033[0m' # No Color
+set -e
 
-# Check if Firebase CLI is installed
-if ! command -v firebase &> /dev/null; then
-    echo -e "${RED}❌ Firebase CLI not found. Please install it first:${NC}"
-    echo "npm install -g firebase-tools"
-    exit 1
-fi
+echo "🪓 Lumberjack - Document Hierarchy Tree Editor"
+echo "=============================================="
+echo ""
+echo "Choose your deployment method:"
+echo ""
+echo "1) 🔥 Firebase Cloud (Scalable, requires Blaze plan)"
+echo "   - Serverless Firebase Functions (Python)"
+echo "   - Firebase Storage for file uploads"
+echo "   - Firebase Hosting for web app"
+echo "   - Automatic scaling and CDN"
+echo "   - Cost: ~$1-5/month for moderate usage"
+echo ""
+echo "2) 🏠 Local Self-Hosted (No credentials required)"
+echo "   - Runs entirely on your server/computer"
+echo "   - Node.js backend with Python parsers"
+echo "   - Docker support for easy deployment"
+echo "   - No external dependencies or costs"
+echo ""
 
-# Build the client
-echo -e "${YELLOW}📦 Building React client...${NC}"
-cd client
-npm run build
+read -p "Enter your choice (1 or 2): " -n 1 -r
+echo ""
+echo ""
 
-if [ $? -ne 0 ]; then
-    echo -e "${RED}❌ Build failed${NC}"
-    exit 1
-fi
-
-cd ..
-
-# Deploy to Firebase
-echo -e "${YELLOW}🚀 Deploying to Firebase...${NC}"
-firebase deploy --only hosting,storage,functions
-
-if [ $? -eq 0 ]; then
-    echo -e "${GREEN}🎉 Deployment successful!${NC}"
-    echo ""
-    echo -e "${YELLOW}Your Lumberjack app is now live at:${NC}"
-    firebase hosting:channel:open live
-else
-    echo -e "${RED}❌ Deployment failed${NC}"
-    exit 1
-fi
+case $REPLY in
+    1)
+        echo "🔥 Starting Firebase Cloud deployment..."
+        echo ""
+        cd deployments/firebase-cloud
+        ./deploy.sh
+        ;;
+    2)
+        echo "🏠 Starting Local Self-Hosted deployment..."
+        echo ""
+        cd deployments/local-selfhosted
+        ./start.sh
+        ;;
+    *)
+        echo "❌ Invalid choice. Please run the script again and choose 1 or 2."
+        exit 1
+        ;;
+esac

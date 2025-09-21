@@ -145,86 +145,75 @@ Before running this application, make sure you have:
 
 ## 🚀 Quick Start
 
-### Option 1: Try the Live Demo (Recommended)
+Choose your preferred deployment method:
+
+### 🔥 Firebase Cloud (Live Demo)
 **[🌐 https://lumberjack-23104.web.app](https://lumberjack-23104.web.app)**
+
+**Try the live demo instantly - no setup required!**
 
 1. Click the demo link above
 2. Upload your document or paste markdown content  
 3. Choose your preferred parser (PyMuPDF recommended)
 4. Edit and export your structured content
-5. No setup required - works instantly!
 
-### Option 2: Run Locally
-
-2. **Configure Firebase credentials**
-   ```bash
-   cd client
-   cp env.example .env
-   # Edit .env with your Firebase credentials
-   ```
-
-3. **Run the setup script** (handles everything automatically)
-   ```bash
-   ./setup.sh
-   ```
-
-   Or install manually:
-   ```bash
-   # Create Python virtual environment
-   python3 -m venv venv
-   source venv/bin/activate
-   pip install markitdown
-   
-   # Install Node.js dependencies
-   npm install
-   cd server && npm install
-   cd ../client && npm install
-   ```
-
-## Running the Application
-
-### Easy Start (Recommended)
-
+**Deploy your own Firebase instance:**
 ```bash
-./start-local.sh
+./deploy.sh  # Choose option 1 (Firebase Cloud)
 ```
 
-This will start both servers and open the application at `http://localhost:3000`
+### 🏠 Local Self-Hosted (Privacy First)
 
-### Manual Start
+**Zero configuration - no credentials required!**
 
-Start backend:
 ```bash
-cd server
-node index.js
+# Quick start with Docker
+cd deployments/local-selfhosted
+./start.sh
+
+# Or use the deployment selector
+./deploy.sh  # Choose option 2 (Local Self-Hosted)
 ```
 
-Start frontend (in a new terminal):
-```bash
-cd client
-npm run dev
+**Access at:** http://localhost:3001
+
+## 📁 Project Structure
+
+```
+AutoChunker/
+├── deployments/
+│   ├── firebase-cloud/      # 🔥 Firebase Cloud version
+│   │   ├── client/          # React frontend with Firebase
+│   │   ├── functions/       # Python Cloud Functions
+│   │   ├── firebase.json    # Firebase configuration
+│   │   └── deploy.sh        # Firebase deployment script
+│   └── local-selfhosted/    # 🏠 Local self-hosted version
+│       ├── client/          # React frontend (no Firebase)
+│       ├── server/          # Node.js backend
+│       ├── docker-compose.yml
+│       └── start.sh         # Local startup script
+├── demo-files/              # Sample documents
+├── screenshots/             # App screenshots
+└── deploy.sh               # Deployment selector
 ```
 
-This will start:
-- Backend server on `http://localhost:3001`
-- Frontend development server on `http://localhost:3000`
+## 🔄 Deployment Comparison
 
-### Production Build
-
-1. Build the frontend:
-   ```bash
-   npm run build
-   ```
-
-2. Start the production server:
-   ```bash
-   npm start
-   ```
+| Feature | 🔥 Firebase Cloud | 🏠 Local Self-Hosted |
+|---------|------------------|----------------------|
+| **Setup Time** | ~10 minutes | ~2 minutes |
+| **Cost** | ~$1-5/month | Free |
+| **Privacy** | Google Firebase | Complete local control |
+| **Scalability** | Auto-scaling | Manual scaling |
+| **Maintenance** | Managed by Google | Self-managed |
+| **Credentials** | Firebase API keys | None required |
+| **Global CDN** | ✅ Included | ❌ Manual setup |
+| **Offline Usage** | ❌ Internet required | ✅ Works offline |
 
 ## Usage
 
 1. **Upload Document**
-   - Visit `http://localhost:3000`
+   - Visit your deployed app (Firebase demo or localhost:3001)
    - Upload a document (PDF, DOCX, PPTX, TXT, or MD) or paste Markdown directly
    - The document will be automatically converted to Markdown
 
@@ -347,7 +336,61 @@ The backend is a simple Express server that:
 | **PyPDF** | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐⭐ | Lightweight, simple PDFs |
 | **pdfminer** | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | Complex layouts, research papers |
 
-## 🚀 Deployment
+## 🚀 Detailed Deployment
+
+### 🔥 Firebase Cloud Deployment
+
+**Requirements:**
+- Firebase project with Blaze Plan (~$1-5/month)
+- Firebase CLI: `npm install -g firebase-tools`
+
+**Steps:**
+```bash
+# 1. Clone and navigate
+git clone https://github.com/pandaxbacon/AutoChunker.git
+cd AutoChunker
+
+# 2. Deploy to Firebase
+./deploy.sh  # Choose option 1
+
+# 3. Follow prompts to configure Firebase
+```
+
+**Detailed Setup:** See [Firebase Cloud README](deployments/firebase-cloud/README.md)
+
+### 🏠 Local Self-Hosted Deployment
+
+**Requirements:**
+- Docker + Docker Compose (recommended)
+- OR Node.js 18+ + Python 3.8+
+
+**Quick Start:**
+```bash
+# 1. Clone and navigate
+git clone https://github.com/pandaxbacon/AutoChunker.git
+cd AutoChunker
+
+# 2. Start local version
+./deploy.sh  # Choose option 2
+
+# 3. Access at http://localhost:3001
+```
+
+**Docker Deployment:**
+```bash
+cd deployments/local-selfhosted
+docker-compose up --build -d
+```
+
+**Manual Deployment:**
+```bash
+cd deployments/local-selfhosted
+./start.sh
+```
+
+**Detailed Setup:** See [Local Self-Hosted README](deployments/local-selfhosted/README.md)
+
+## 🚀 Legacy Deployment (Original)
 
 ```bash
 # Deploy everything (hosting + functions + storage rules)
