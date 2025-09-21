@@ -5,6 +5,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const { exec } = require('child_process');
 const util = require('util');
+const { PARSERS, convertDocument, getParserRecommendation, compareParser } = require('./document-parsers');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -91,11 +92,24 @@ app.post('/api/upload', upload.single('document'), async (req, res) => {
 
     const filePath = req.file.path;
     const originalName = req.file.originalname;
+    const parser = req.body.parser || PARSERS.PYMUPDF; // Use PyMuPDF as default for best performance
     
-    console.log(`Processing file: ${originalName}`);
+    console.log(`Processing file: ${originalName} with ${parser}`);
     
-    // Convert to markdown
-    const markdown = await convertToMarkdown(filePath);
+    // Convert to markdown using selected parser
+    const markdown = await convertDocument(filePath, parser);
+    
+    // Get parser recommendation
+    const recommendation = getParserRecommendation(originalName);
+    
+    // For PDF files, keep a copy for preview (copy to a predictable location)
+    let pdfPreviewPath = null;
+    if (originalName.toLowerCase().endsWith('.pdf')) {
+      const previewDir = path.join(__dirname, 'pdf_previews');
+      await fs.ensureDir(previewDir);
+      pdfPreviewPath = path.join(previewDir, originalName);
+      await fs.copy(filePath, pdfPreviewPath);
+    }
     
     // Clean up uploaded file
     await fs.remove(filePath);
@@ -103,7 +117,9 @@ app.post('/api/upload', upload.single('document'), async (req, res) => {
     res.json({
       success: true,
       originalName,
-      markdown: markdown.trim()
+      parser: parser,
+      markdown: markdown.trim(),
+      recommendation
     });
     
   } catch (error) {
@@ -143,6 +159,108 @@ app.post('/api/markdown', (req, res) => {
     console.error('Markdown processing error:', error);
     res.status(500).json({ 
       error: 'Failed to process markdown', 
+      details: error.message 
+    });
+  }
+});
+
+// Route to get available parsers
+app.get('/api/parsers', (req, res) => {
+  res.json({
+    parsers: Object.values(PARSERS),
+    descriptions: {
+      [PARSERS.MARKITDOWN]: 'Microsoft MarkItDown - Best overall, supports many formats',
+      [PARSERS.PYMUPDF]: 'PyMuPDF - Fastest, excellent structure preservation',
+      [PARSERS.PDFPLUMBER]: 'pdfplumber - Best for tables and structured data',
+      [PARSERS.PDFMINER]: 'pdfminer.six - Pure Python, good for complex layouts',
+      [PARSERS.PYPDF]: 'PyPDF - Lightweight, good for simple PDFs'
+    }
+  });
+});
+
+// Route to serve PDF files for preview
+app.get('/api/pdf/:filename', async (req, res) => {
+  try {
+    const filename = decodeURIComponent(req.params.filename);
+    
+    // Look for the PDF in multiple locations
+    const possiblePaths = [
+      path.join(__dirname, 'pdf_previews', filename), // Uploaded PDFs
+      path.join(__dirname, '..', filename), // Project root
+      path.join(__dirname, 'uploads', filename) // Temp uploads
+    ];
+    
+    let pdfPath = null;
+    for (const testPath of possiblePaths) {
+      if (await fs.pathExists(testPath)) {
+        pdfPath = testPath;
+        break;
+      }
+    }
+    
+    if (!pdfPath) {
+      console.log(`PDF not found: ${filename}. Searched paths:`, possiblePaths);
+      return res.status(404).json({ error: 'PDF file not found for preview' });
+    }
+    
+    console.log(`Serving PDF: ${pdfPath}`);
+    
+    // Set proper headers for PDF
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', `inline; filename="${filename}"`);
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    
+    // Stream the PDF file
+    const fileStream = require('fs').createReadStream(pdfPath);
+    fileStream.pipe(res);
+    
+  } catch (error) {
+    console.error('PDF serve error:', error);
+    res.status(500).json({ error: 'Failed to serve PDF' });
+  }
+});
+
+// Route to compare parsers on a document
+app.post('/api/compare', upload.single('document'), async (req, res) => {
+  try {
+    if (!req.file) {
+      return res.status(400).json({ error: 'No file uploaded' });
+    }
+
+    const filePath = req.file.path;
+    const originalName = req.file.originalname;
+    const parsersToTest = req.body.parsers ? 
+      req.body.parsers.split(',') : 
+      [PARSERS.MARKITDOWN, PARSERS.PYMUPDF, PARSERS.PDFPLUMBER];
+    
+    console.log(`Comparing parsers for: ${originalName}`);
+    
+    // Compare parsers
+    const results = await compareParser(filePath, parsersToTest);
+    
+    // Clean up uploaded file
+    await fs.remove(filePath);
+    
+    res.json({
+      success: true,
+      originalName,
+      comparison: results
+    });
+    
+  } catch (error) {
+    console.error('Parser comparison error:', error);
+    
+    // Clean up file if it exists
+    if (req.file?.path) {
+      try {
+        await fs.remove(req.file.path);
+      } catch (cleanupError) {
+        console.error('Error cleaning up file:', cleanupError);
+      }
+    }
+    
+    res.status(500).json({ 
+      error: 'Failed to compare parsers', 
       details: error.message 
     });
   }

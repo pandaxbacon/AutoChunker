@@ -8,12 +8,19 @@ interface FileUploadProps {
   setProcessingState: (state: ProcessingState) => void;
 }
 
+interface Parser {
+  id: string;
+  name: string;
+  description: string;
+}
+
 const FileUpload: React.FC<FileUploadProps> = ({ 
   onFileProcessed, 
   processingState, 
   setProcessingState 
 }) => {
   const [dragActive, setDragActive] = useState(false);
+  const [selectedParser, setSelectedParser] = useState('pymupdf');
 
   const handleFiles = useCallback(async (files: FileList) => {
     if (files.length === 0) return;
@@ -40,6 +47,7 @@ const FileUpload: React.FC<FileUploadProps> = ({
     try {
       const formData = new FormData();
       formData.append('document', file);
+      formData.append('parser', selectedParser);
 
       const response = await fetch('/api/upload', {
         method: 'POST',
@@ -100,7 +108,29 @@ const FileUpload: React.FC<FileUploadProps> = ({
   }, [handleFiles]);
 
   return (
-    <div className="w-full max-w-2xl mx-auto">
+    <div className="w-full max-w-2xl mx-auto space-y-4">
+      {/* Simple Parser Selection */}
+      <div className="bg-white p-4 rounded-lg border border-gray-200">
+        <label className="block text-sm font-medium text-gray-700 mb-2">
+          Document Parser
+        </label>
+        <select
+          value={selectedParser}
+          onChange={(e) => setSelectedParser(e.target.value)}
+          className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+          disabled={processingState.isUploading}
+        >
+          <option value="pymupdf">PyMuPDF - Fast with excellent structure (default)</option>
+          <option value="pdfplumber">pdfplumber - Best for tables and structure</option>
+          <option value="markitdown">MarkItDown - Microsoft library (original)</option>
+          <option value="pypdf">PyPDF - Lightweight and fast</option>
+          <option value="pdfminer">pdfminer - Good for complex layouts</option>
+        </select>
+        <p className="mt-1 text-xs text-gray-500">
+          Choose the best parser for your document type (PyMuPDF recommended)
+        </p>
+      </div>
+
       <div
         className={`
           relative border-2 border-dashed rounded-lg p-8 text-center transition-colors
