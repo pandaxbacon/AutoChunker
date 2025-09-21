@@ -1,0 +1,1180 @@
+Library: PyMuPDF (fitz)
+Notes: Fast, good text extraction, preserves layout
+==================================================
+
+
+--- Page 1 ---
+SAMPLE
+ 
+AIA International Limited 
+ 
+ 
+ 
+Wisdom Term (std) 
+06302017 DCFH P0108 
+Your Basic Policy is called Wisdom Term Life Plan. It is a term insurance plan which provides the following benefits 
+subject to the terms and conditions set out herein. 
+ 
+BASIC DEFINITIONS 
+ 
+DEFINITIONS 
+ 
+In this Policy: 
+ 
+“Basic Policy” means this Policy (as may be amended by endorsement from time to time) excluding coverage issued under 
+any Supplementary Contract. 
+ 
+“Beneficiary” means the person or persons designated in the application form as the beneficiary under this Policy (as may be 
+amended from time to time in accordance with this Policy). 
+ 
+“Company”, “we”, “us” or “our” means AIA International Limited. 
+ 
+“Contingent Owner” means the person named by the Owner as “Contingent Owner” in the Company’s prescribed form, 
+who may become the Owner pursuant to the “CHANGE OF OWNERSHIP” provisions under the “OWNERSHIP 
+PROVISIONS” of the Policy. It is only applicable for Policy with Insured under 18 years old when the Policy is issued. 
+ 
+"Expiry Date" of the Basic Policy is shown in the Policy Information Page. Unless otherwise specified, the Expiry Date 
+for a Supplementary Contract falls on the Policy Anniversary equal to the number of years for which premiums for the 
+relevant Supplementary Contract are payable as shown in the Schedule of Benefits and Premiums of the Policy 
+Information Page.  
+ 
+“Grace Period” has the meaning ascribed to such term under the PREMIUM PROVISIONS. 
+ 
+“Insured” means the person as shown on the Policy Information Page as the “Insured”. 
+ 
+“Issue Age” in relation to the age of the Insured, means the age shown on the Policy Information Page as the “Issue Age”. 
+ 
+“Issue Date” or “Commencement Date” is the date when coverage under this Policy or its relevant Supplementary Contract 
+takes effect. The Issue Date is shown on the Policy Information Page and the Commencement Date is indicated in the relevant 
+endorsement if the original terms and coverage of the Policy are changed subsequently. Commencement Date is also the date 
+of reinstatement of the Policy and/or its Supplementary Contract in case of any reinstatement. 
+ 
+“Issuing Office” means: 1) where this Policy is issued in Hong Kong, AIA International Limited in Hong Kong at the address 
+shown on the Policy Information Page; 2) where this Policy is issued in Macau, AIA International Limited in Macau at the 
+address shown on the Policy Information Page; or 3) such other address (if any) as we may notify you in writing from time to 
+time. 
+ 
+“Owner”, “you” or “your” is the person who owns this Policy and shown on the Policy Information Page as the “Owner”, 
+subject to the “CHANGE OF OWNERSHIP” provisions under the “OWNERSHIP PROVISIONS” of the Policy, if 
+applicable. 
+ 
+“Paid Up Date”, in relation to the Basic Policy or any Supplementary Contract, means the Policy Anniversary occurring 
+the number of years following the Policy Date as shown under the column of “No. of Years Premiums Payable” on the 
+Policy Information Page.  
+ 
+*** End of page *** 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- Page 2 ---
+SAMPLE
+ 
+AIA International Limited 
+ 
+ 
+ 
+Wisdom Term (std) 
+06302017 DCFH P0208 
+“Policy” consists of:  
+ 
+(a) 
+Basic Policy (including schedules); 
+(b) 
+Policy Information Page; 
+(c) 
+application for the Basic Policy and for Supplementary Contracts (if any), including the application forms (if any), 
+any subsequent amendments, declarations and statements duly made by the Owner and/or the Insured; 
+(d) 
+endorsements to this Policy (if any); and 
+(e) 
+Supplementary Contracts (if any). 
+ 
+“Policy Anniversary” or “Policy Anniversaries” means the same date in each subsequent year as the Policy Date. If the 
+Policy Date is 29 February of a leap year, then the Policy Anniversary will be 28 February in non-leap year. 
+ 
+“Policy Date” as shown on the Policy Information Page, means the date from which Policy Anniversaries, Policy Years, 
+policy months and premium due dates are determined. 
+ 
+“Policy Information Page” means the schedule headed “Policy Information Page” issued in connection with this Basic 
+Policy. 
+ 
+“Policy Year” means each twelve-month period starting on the Policy Date. 
+ 
+“Special Terms” means the special terms you have agreed for your Policy, if any, (including, but not limited to, special terms 
+to reflect increased risks in relation to residence, nationality or health). 
+ 
+“Sum Assured” means the amount shown on the Policy Information Page as the “Sum Assured” (as may be amended by 
+endorsement from time to time). 
+ 
+“Supplementary Contract” means the terms and conditions set out in any supplementary contract or rider to the Basic 
+Policy in relation to benefits supplemental to your Basic Policy benefits. 
+ 
+GENERAL INTERPRETATION AND APPLICATION 
+ 
+Where the context requires, words importing one gender shall include the other gender, and singular terms shall include the 
+plural and vice versa. 
+ 
+Headings are for convenience only and shall not affect the interpretation of this Policy. References to sections, clauses, 
+provisions and schedules are to sections, clauses, provisions and schedules to this Policy.   
+ 
+Schedules to this Policy form part of this Policy.  
+ 
+*** End of page *** 
+ 
+ 
+
+--- Page 3 ---
+SAMPLE
+ 
+AIA International Limited 
+ 
+ 
+ 
+Wisdom Term (std) 
+06302017 DCFH P0308 
+DEATH BENEFIT PROVISIONS 
+ 
+DEATH BENEFIT 
+ 
+If the Insured dies while the Policy is in force, we will pay the Sum Assured as the Death Benefit hereunder in accordance 
+with the GENERAL PROVISIONS. The Death Benefit payable will be reduced by the aggregate amount that you owe to 
+us under the Policy (if any). 
+ 
+NOTICE OF DEATH AND PROOF OF CLAIM 
+ 
+We require a written notification of the Insured’s death as soon as practicable and proof of claim to our satisfaction before 
+making any payment of the Death Benefit.  
+ 
+Proof of claim consists of the following, which must be submitted to our Issuing Office: 
+ 
+(i) 
+this Policy document; 
+(ii) 
+certified true copies of documentary proof of the date of death of the Insured; 
+(iii) 
+evidence of entitlement to receive payment of the proceeds under this Policy; and 
+(iv) 
+any other information which we may reasonably require to consider the claim. 
+ 
+*** End of page *** 
+ 
+ 
+
+--- Page 4 ---
+SAMPLE
+ 
+AIA International Limited 
+ 
+ 
+ 
+Wisdom Term (std) 
+06302017 DCFH P0408 
+GENERAL PROVISIONS 
+ 
+THE CONTRACT 
+ 
+Your Policy is a legally enforceable agreement between you and us. This Policy comes into force on the Issue Date 
+provided you have paid the full amount of the first premium and have submitted a signed and dated application.  
+ 
+The plan name of the Basic Policy and the product and/or code name and form number of the Supplementary Contract (if 
+any) are shown under the Schedule of Benefits and Premiums of the Policy Information Page. 
+ 
+We rely on the information you provide in your application in deciding whether or not to accept your application. We also 
+rely on such information to decide at our sole and absolute discretion whether or not we need to apply Special Terms to 
+your Policy. We will treat all statements made in your application (in the absence of fraud) to be representations and shall 
+form the basis of the contract. 
+ 
+If your application omits facts or contains materially incorrect or incomplete facts, we have the right to declare the Policy 
+void. Alternatively, we may impose Special Terms on your Policy that will apply from the date on which the cover 
+commences. 
+ 
+INCONTESTABILITY 
+ 
+Except for fraud or non-payment of premiums, we will not contest the validity of this Policy after it has been in force 
+during the lifetime of the Insured for a continuous period of two (2) years from the Issue Date or Commencement Date, 
+whichever is later. 
+ 
+This “Incontestability” provision does not apply to any Supplementary Contract providing accident, hospitalization or 
+disability benefits. 
+ 
+SUICIDE 
+ 
+If the Insured, whether sane or insane, commits suicide within one (1) year from the Issue Date or Commencement Date, 
+whichever is later, our liability under the Policy will be limited to the refund of premiums paid (without interest) less any 
+amounts that you owe to us under the Policy. 
+ 
+SMOKING HABIT 
+ 
+This Basic Policy is issued or reinstated on the basis of the Insured’s declared smoking habits. If the Insured is a smoker as 
+at the date of the application form for the Basic Policy or as at the date of the appropriate form for reinstatement of the 
+Basic Policy but you and/or the Insured do not disclose the same to us in the relevant form, this Basic Policy shall be 
+voidable by the Company notwithstanding any other provision of the Policy (including, but not limited to, any 
+incontestability clause in this Policy). 
+ 
+*** End of page *** 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- Page 5 ---
+SAMPLE
+ 
+AIA International Limited 
+ 
+ 
+ 
+Wisdom Term (std) 
+06302017 DCFH P0508 
+MISSTATEMENT OF AGE AND/OR SEX    
+ 
+If the Insured’s age or sex was misstated in your application, the amount payable by us under your Policy will be adjusted 
+at the time we make any payment under the Policy. 
+ 
+Where a higher premium would have applied on the basis of the correct age and sex, we will adjust the benefit payable 
+based on what the premiums paid would have provided at the Insured’s correct age and sex. 
+ 
+Where a lower premium would have applied on the basis of the correct age and sex, we will refund any surplus premium 
+paid without interest. 
+ 
+Where the Insured would not have satisfied our insurability requirements on the basis of the correct age and sex, we have 
+the right to declare the Policy or the Supplementary Contract void (as the case may be) and our liability under the Policy or 
+the Supplementary Contract (as the case may be) will be limited to return of premiums paid (without interest) less any 
+amounts that you owe to us under the Policy. 
+ 
+We have the right to require proof of the Insured’s age to our satisfaction at the time of processing any claim or payment of 
+any benefit under your Policy. 
+ 
+FREEDOM FROM RESTRICTION 
+ 
+Unless otherwise specified, this Policy contains no restrictions with respect to the Insured’s residence, travel or occupation. 
+ 
+MODIFICATIONS 
+ 
+No variation to the Policy (or any waiver of any term or condition of the Policy) will be binding unless evidenced by an 
+endorsement signed by our duly authorised officer. 
+ 
+CURRENCY AND PLACE OF PAYMENT 
+ 
+All amounts payable under this Policy either to or by us shall be made in the currency shown on the Policy Information 
+Page provided that we shall have the absolute discretion to accept payment in another currency. All amounts due from us 
+will be payable by our Issuing Office. 
+ 
+OWNERSHIP PROVISIONS 
+ 
+Owner 
+ 
+The Owner is the only person entitled to exercise any right or privilege provided under the Policy. 
+ 
+*** End of page *** 
+ 
+
+--- Page 6 ---
+SAMPLE
+ 
+AIA International Limited 
+ 
+ 
+ 
+Wisdom Term (std) 
+06302017 DCFH P0608 
+Change of Ownership 
+ 
+While this Policy is in force, you may, without the consent of the Beneficiary or trustee, change ownership of this Policy 
+by filing a written notice on the Company’s prescribed form. Any change of ownership of this Policy shall be conditional 
+upon the satisfaction of customer due diligence and other applicable requirements under Anti-Money Laundering and 
+Counter-Terrorist Financing (Financial Institutions) Ordinance and other applicable guidelines, and any such change will 
+not be effective until such change is evidenced by an endorsement issued by us. We are not responsible for any written 
+notice of a change of ownership received by us pending issue of an endorsement. 
+ 
+If and when the Owner dies: 
+(a) 
+If the Insured is 18 years old or above and no Contingent Owner is named, the Insured will become the Owner of 
+this Policy.  
+ 
+(b) 
+If the Insured is 18 years old or above and a Contingent Owner is named, the Insured will become the Owner of 
+this Policy. 
+ 
+(c) 
+If the Insured is less than 18 years old and a Contingent Owner is named, the Contingent Owner will become the 
+Owner of this Policy.   
+ 
+(d) 
+If the Insured is less than 18 years old and no Contingent Owner is named, the successor to the Owner’s estate will 
+become the Owner of this Policy. 
+ 
+PAYMENT OF BENEFITS 
+ 
+During the lifetime of the Insured, all benefits payable under the Policy will be paid to the Owner if the Owner is alive. 
+ 
+If the Insured dies, unless otherwise provided under applicable law, any Death Benefit payable under the Policy will be paid to 
+the Beneficiary. If no Beneficiary survives the Insured, the Death Benefit and all other benefits, if any, will be paid to the 
+Owner if the Owner is alive, otherwise to the Owner’s estate. 
+ 
+CHANGE OF BENEFICIARY 
+ 
+While your Policy is in force and to the extent permitted by law, you may change the designated Beneficiary by sending a 
+written notice to us on our Company’s prescribed form unless the previous designation specifies otherwise. A change of 
+Beneficiary will not be valid unless: 
+ 
+(a) 
+such change has been confirmed by our Issuing Office in writing; 
+ 
+(b) 
+both you and the Insured are alive at the date of such confirmation; and 
+ 
+(c) 
+such change is evidenced by an endorsement issued by us. 
+ 
+We are not responsible for any written notice of a change of Beneficiary received by us pending issue of an endorsement. 
+ 
+FULL DISCHARGE 
+ 
+Upon the death of the Insured, the Death Benefit to be payable under the Policy shall be paid to the Beneficiary or the 
+Owner (or the Owner’s personal representatives (if applicable)) and any such payment shall be deemed a good discharge of 
+the Company’s obligations under the Policy. 
+ 
+RENEWAL PRIVILEGE  
+ 
+While this Policy is kept in force it may be renewed without further evidence of insurability on the Expiry Date and any 
+subsequent Expiry Dates before the Policy Anniversary following the Insured’s eighty-fifth (85th) birthday by advance 
+payment of appropriate annual premiums. The premium charged shall be determined in accordance with the Company’s 
+applicable premium rate for the attained age of the Insured at the time of such renewal. The term of any such renewal will 
+be the original term of this Policy or, if shorter, the number of years to the Policy Anniversary immediately following the 
+Insured’s eighty-fifth (85th) birthday. 
+ 
+*** End of page *** 
+
+--- Page 7 ---
+SAMPLE
+ 
+AIA International Limited 
+ 
+ 
+ 
+Wisdom Term (std) 
+06302017 DCFH P0708 
+ 
+CONVERSION PRIVILEGE 
+ 
+At any time while this Policy is in force but not later than the Policy Anniversary immediately following the Insured’s 
+seventieth (70th) birthday, it may be surrendered to the Company in exchange for a new whole life policy (subject to the 
+choices of products then made available by the Company for the purpose of this provision and Company's prevailing rules 
+and regulations) without further evidence of insurability for an amount not exceeding the Sum Assured of the Basic Policy. 
+Such new policy shall be dated as of the date of surrender. The premium charged on the new policy shall be determined in 
+accordance with the Company’s applicable premium rates then in effect for the Insured’s age on the date of surrender. If 
+this Policy is issued with an extra premium, an extra premium computed on a consistent basis shall be charged on the new 
+policy. 
+ 
+ASSIGNMENT  
+ 
+Subject to the satisfaction of customer due diligence and other applicable requirements under Anti-Money Laundering and 
+Counter-Terrorist Financing (Financial Institutions) Ordinance and other applicable guidelines, you may assign your rights 
+to the benefits under this Policy by filing a written notice on the Company’s prescribed form or such other form of written 
+notification as agreed by us. We shall not be deemed to have any knowledge of any assignment unless we have 
+acknowledged in writing receipt of the notice of assignment. We are not responsible for the validity or legality of any 
+assignment of this Policy by the Owner.     
+ 
+SURRENDER 
+ 
+This Policy may be surrendered at any time by written request. This Policy has no cash value and no benefits are payable 
+on surrender. Upon surrender, this Policy shall terminate. 
+ 
+NO THIRD PARTY RIGHTS  
+ 
+A person who is not a party to this Policy (including but not limited to the Insured or the Beneficiary) has no right to 
+enforce any of the terms of this Policy.  
+ 
+TERMINATION  
+ 
+This Policy shall automatically terminate on the occurrence of the earliest of the following: 
+ 
+(a) 
+the Expiry Date of the Basic Policy; 
+ 
+(b) 
+the death of the Insured; 
+ 
+(c) 
+the surrender of the Policy; and 
+ 
+(d) 
+the lapse of the Policy following the expiry of the Grace Period. 
+  
+On termination of your Policy, all benefits under all Supplementary Contracts (if any) will also terminate. 
+ 
+Termination of your Policy will not affect any claim or benefit arising prior to such termination unless otherwise stated.   
+ 
+GOVERNING LAW AND JURISDICTION 
+ 
+This Policy is governed by and shall be construed in accordance with the laws of such place where this Policy is issued 
+(being Hong Kong or Macau, as the case may be). The courts of such place shall have non-exclusive jurisdiction to 
+consider and determine any dispute or proceedings arising out of or in connection with this Policy. 
+ 
+*** End of page *** 
+
+--- Page 8 ---
+SAMPLE
+ 
+AIA International Limited 
+ 
+ 
+ 
+Wisdom Term (std) 
+06302017 DCFH P0808 
+PREMIUM PROVISIONS 
+ 
+PAYMENT  
+ 
+While the Insured is living, all premiums are payable to us on or before their due dates until the Expiry Date. Payment shall 
+be made to us either at our Issuing Office or to our authorized officer or cashier. Any premium(s) paid to us but not yet due 
+("Prepaid Premium") and / or any payment in excess of premium(s) currently due and payable (“Overpayment”) shall, 
+subject to any maximum amount as determined by us from time to time, accumulate interest at such interest rates as we 
+may determine from time to time. We reserve the right to reject any Prepaid Premium and / or Overpayment paid to us in 
+excess of such maximum amount. You may withdraw the Prepaid Premium or Overpayment and / or any interest thereon 
+in accordance with our procedures. The balance of any Prepaid Premium, Overpayment and / or interest thereon that is not 
+withdrawn shall be automatically used to offset any premium due and payable which is not paid within the Grace Period. 
+ 
+CHANGE  
+ 
+You may change the frequency of premium payments by written request. Subject to our minimum premium requirements, 
+premiums may be paid on an annual, semi-annual, quarterly or monthly mode at the premium rates applicable on the Issue 
+Date. 
+ 
+DEFAULT 
+ 
+After payment of the first premium, failure to pay a subsequent premium on or before its due date will constitute a default 
+in premium payment. 
+ 
+GRACE PERIOD  
+ 
+A grace period of thirty-one (31) days from the due date (“Grace Period”) will be allowed for payment of each subsequent 
+premium. The Policy will remain in force during this period. If any premium remains unpaid at the end of its Grace Period, 
+the Policy shall lapse and have no further value. 
+ 
+DEDUCTION OF PREMIUM AT DEATH 
+ 
+If the Insured dies, any balance of the premium due for the full year in which death occurs shall be deducted from the 
+proceeds payable under the Policy. 
+ 
+REINSTATEMENT 
+ 
+If your Policy lapses following the non-payment of premium within the Grace Period, you may request for your Policy to 
+be reinstated within five (5) years from the due date of the premium in default provided all of the following conditions are 
+met: 
+ 
+(a) 
+your request is submitted in writing on the Company’s prescribed form to our Issuing Office; 
+(b) 
+evidence to our satisfaction of insurability (including, but not limited to, evidence of the Insured’s health status), 
+is submitted to us; 
+(c) 
+the amount of overdue premium as we may determine is paid to us with interest; and 
+(d) 
+you have not surrendered the Policy. 
+ 
+We may refuse your application for reinstatement at our sole discretion and without being required to give any reason for 
+our decision. 
+ 
+The Policy will be in force from the relevant Commencement Date (being the date of reinstatement of the Policy) upon 
+reinstatement. Interest on the aggregate amounts that you owe to us under the Policy (if any) will be compounded to the 
+date of reinstatement at an annual rate determined by us. 
+ 
+No cover is provided under this Policy during the period starting from the date on which the Policy lapses and ending on 
+the date of reinstatement. 
+ 
+*** End of page *** 
+
+--- Page 9 ---
+SAMPLE
+AIA International Limited 
+Super Lifestage Option (Term Plan)         
+06302017 DCFG P0102 
+SUPER LIFESTAGE OPTION ENDORSEMENT 
+This endorsement is attached to and forms part of the Basic Policy. 
+SUPER LIFESTAGE OPTION 
+While this Policy is kept in force, the Owner may upon the occurrence of any one of the Milestone Events and without 
+further evidence of insurability, purchase an additional term insurance policy in the form of supplementary contract then 
+made available by the Company for the purpose of this provision (“New Term Supplementary Contract”) and attach the 
+New Term Supplementary Contract to this Basic Policy in accordance with the provisions and limitations of this 
+endorsement. 
+“Milestone Events” mean: 
+(i)
+the Insured’s marriage validly recognized in Hong Kong; or
+(ii)
+the birth of any natural child of the Insured excluding adoption; or
+(iii)
+a first mortgage obtained by the Insured from a bank authorized by the Hong Kong Monetary Authority or a bank 
+which is incorporated or established in any place outside Hong Kong and supervised for compliance by a
+regulatory authority that performs similar function to the Hong Kong Monetary Authority within one hundred and 
+eighty (180) days of a new purchase of residential property.  
+The premium charged on the New Term Supplementary Contract shall be determined in accordance with the Company’s
+applicable premium rate for the attained age of the Insured at the time of purchase of the New Term Supplementary 
+Contract. The term of the New Term Supplementary Contract will be the original term of this Policy or, if shorter, the
+number of years to the Policy Anniversary immediately following the Insured’s eighty-fifth (85th) birthday.
+LIMITATIONS 
+(i)
+Upon the issuance of this endorsement, you shall be entitled to this Super Lifestage Option provided that your
+Basic Policy is not issued with any Special Terms. Where the Special Terms by any subsequent endorsements
+apply to the Basic Policy, this Super Lifestage Option shall automatically terminate upon issuance of such
+endorsements.
+(ii)
+You may only exercise this Super Lifestage Option up to a maximum of one (1) time per each Milestone Event.
+(iii)
+You may only exercise this Super Lifestage Option up to a maximum of two (2) times per life time of the Insured.
+(iv)
+The exercise of Super Lifestage Option must be separated by at least two (2) consecutive years each time.
+(v)
+You may only exercise this Super Lifestage Option on or before the Policy Anniversary following the Insured’s
+sixtieth (60th) birthday.
+(vi)
+You may only exercise this Super Lifestage Option two (2) years after the Issue Date or Commencement Date, 
+whichever is later.
+(vii)
+You may only exercise this Super Lifestage Option provided no claim is submitted to us or currently being
+processed or has been made under this Basic Policy.
+The sum assured of each New Term Supplementary Contract cannot exceed: 
+(i)
+US$500,000 or HK$/MOP3,750,000 (as the case may be, depending on the currency shown on the Policy
+Information Page); or
+(ii)
+50% of the Sum Assured of this Basic Policy; or
+(iii)
+the mortgage loan amount obtained by the Insured for such new purchase of residential property for paragraph (iii)
+of the definition of Milestone Events stated above,
+whichever is lower. 
+*** End of page *** 
+
+--- Page 10 ---
+SAMPLE
+AIA International Limited 
+Super Lifestage Option (Term Plan)         
+06302017 DCFG P0202 
+NOTICE AND PROOF OF MILESTONE EVENTS 
+The Company will require a notification of the Milestone Events within one hundred and eighty (180) days from the date 
+of the Milestone Events and a proof of the Milestone Events to the Company’s satisfaction before approving the purchase 
+of the New Term Supplementary Contract. 
+Proof of Milestone Events consist of the following, which must be submitted to our Issuing Office: 
+(i)
+(in relation to paragraph (i) of the Milestone Events) certified true copy of marriage certificate of the Insured;
+(ii)
+(in relation to paragraph (ii) of the Milestone Events) certified true copy of birth certificate of the child of the
+Insured;
+(iii)
+(in relation to paragraph (iii) of the Milestone Events) certified true copy of sale and purchase agreement and
+mortgage document of the property registered with the Land Registry of Hong Kong and land search of the
+property at the Land Registry of Hong Kong or  in the case where the property is situated outside Hong Kong,
+certified true copy of transaction documents evidencing the sale and purchase and mortgage of the property and
+official land search of the property to the satisfaction of the Company;
+(iv)
+(in relation to paragraph (iii) of the Milestone Events) certified true copy of evidence of confirmation from the
+mortgagee bank of the mortgage loan drawdown amount;
+(v)
+(in relation to paragraph (iii) of the Milestone Events) certified true copy of the mortgage facility approval letter 
+from the mortgagee bank; and
+(vi)
+any other information which the Company may require in determining whether to approve the purchase of the
+New Term Supplementary Contract.
+Notwithstanding the foregoing, in relation to paragraph (iii) of the Milestone Event, documents submitted to the Company 
+under paragraphs (iii) – (vi) of Proof of Milestone Events for a mortgage of a property located outside Hong Kong must be 
+(1) translated in Chinese or English language; (2) and duly notarized by a notary public or attorney pursuant to his notarial
+functions and/or issued with an Apostille for the authenticity of such documents to the satisfaction of the Company.
+*** End of page ***
+
+--- Page 11 ---
+SAMPLE
+AIA International Limited 
+ 
+TI Endorsement (Term Plan)                                                                                                                 06302017 DCFF P0102 
+ 
+TERMINAL ILLNESS BENEFIT ENDORSEMENT 
+ 
+This Endorsement is attached to and forms part of the Basic Policy. 
+ 
+TERMINAL ILLNESS BENEFITS 
+ 
+While the Policy is in force, we will pay you the Limited Advance Payment in accordance with the provisions and 
+limitations of this endorsement if the Insured is diagnosed with a Terminal Illness. 
+ 
+Upon payment of the Limited Advance Payment, the Sum Assured of your Policy will be reduced by the amount of the 
+Limited Advance Payment. We will deduct any amount that you owe to us under the Policy from the Limited Advance 
+Payment payable by us under this endorsement. 
+ 
+DEFINITIONS 
+ 
+In this endorsement: 
+ 
+"Acquired Immunodeficiency Syndrome" or "AIDS" shall have the meaning ascribed to such term by the World Health 
+Organization from time to time. 
+ 
+"Independent Person" means a person other than: (a) the Owner or the Insured; (b) an immediate family member of the 
+Owner or the Insured; (c) a business partner of the Owner or the Insured; (d) the employer or employee of either the Owner 
+or the Insured; (e) an insurance agent of the Company; or (f) an insurance representative of the Owner or the Insured. 
+ 
+"Limited Advance Payment" means, subject to an Overall Limit, an amount equal to 100% of the Sum Assured of the 
+Basic Policy. 
+  
+"Overall Limit" means the maximum aggregate amount of US$2,000,000 or HK$/MOP15,000,000 (as the case may be, 
+depending on the currency shown on the Policy Information Page) that we will pay for coverage relating to terminal illness 
+under all insurance policies (including this Policy) covering the same Insured issued by us (notwithstanding any difference 
+in the definition of terminal illness and claims conditions). 
+ 
+"Physician or Registered Medical Practitioner" means an Independent Person qualified by degree in and licensed to 
+practise Western medicine who is legally authorised in the geographical area of his practice to render medical or surgical 
+services. This basic plan does not cover any diagnosis made and surgery performed in any hospital in mainland China 
+except the designated hospitals in mainland China. Regarding the designated hospitals in mainland China, please check 
+with AIA website (www.aia.com.hk) for retrieval of the most current hospital list. The list may be varied, updated and 
+amended from time to time at the Company’s discretion, and any change shall be deemed as effective on the date of 
+publication on the AIA website irrespective of whether any separate notice is given. 
+ 
+"Terminal Illness" means a medical condition of the Insured: 
+ 
+(a) the signs or symptoms of which first occur or commence after ninety (90) days of continuous cover under this 
+endorsement; and  
+(b) for which the diagnosis is supported by evidence of the medical condition which is satisfactory to us (including but 
+not limited to clinical, radiological and laboratory evidence); and 
+(c) for which the conclusive diagnosis (with written confirmation) is provided by a Registered Medical Practitioner in the 
+appropriate medical specialty and confirmed by the Company's appointed Registered Medical Practitioner (whose 
+opinion is also conclusive), of a condition that is expected to result in death of the Insured within twelve (12) months 
+(“Terminal Illness Period”). 
+*** End of page *** 
+
+--- Page 12 ---
+SAMPLE
+AIA International Limited 
+ 
+TI Endorsement (Term Plan)                                                                                                                 06302017 DCFF P0202 
+ 
+LIMITATIONS 
+ 
+1. The availability of cover under this endorsement is subject to all the terms of the Basic Policy (including, without 
+limitation, terms relating to incontestability and suicide). 
+2. No Limited Advance Payment will be payable under this endorsement if your Basic Policy is issued with Special 
+Terms. 
+3. No Limited Advance Payment will be payable unless the Terminal Illness Period falls before the Policy Anniversary 
+immediately following the Insured's eighty-fifth (85th) birthday. 
+4. Any pre-existing illnesses, diseases, impairments or conditions from which the Insured is suffering prior to the Issue 
+Date or reinstatement date of your Policy, whichever is later, will not be covered unless the Insured makes a 
+declaration in the application for your Policy or in the application for reinstatement of your Policy, and such 
+application is specifically accepted by us. 
+5. No Limited Advance Payment will be payable under this endorsement where, in our sole opinion, the Terminal Illness 
+results from or is related (directly or indirectly) to Acquired Immunodeficiency Syndrome (AIDS) or Human 
+Immunodeficiency Virus (HIV). 
+6. No Limited Advance Payment will be payable for Terminal Illness due (directly or indirectly) to a congenital defect or 
+disease which manifests or is diagnosed before the Insured attains seventeen (17) years of age. 
+7. No Limited Advance Payment will be payable for Terminal Illness resulting from self-inflicted injury or injuries. 
+ 
+8. No Limited Advance Payment will be payable for Terminal Illness resulting from any physical or mental condition 
+existing before the Issue Date or Commencement Date of the Basic Policy, whichever is later, and which is not 
+disclosed in any application or in any health statement relating to the Policy or this endorsement before the 
+commencement of cover. 
+ 
+CLAIMS 
+ 
+Written notice of claim must be given to the Company within sixty (60) days following the diagnosis of Terminal Illness.  
+Failure to give notice within such time shall not invalidate any claim if it is shown not to have been reasonably possible to 
+give such notice and that notice was given as soon as reasonably possible. 
+ 
+The Company, upon receipt of such written notice, will furnish to the claimant such forms required for filing proof of 
+Terminal Illness. If we do not provide the required forms to the claimant within fifteen (15) days of such notice, the 
+claimant may instead submit proof of claim in writing covering the occurrence, the character and the degree of the 
+Terminal Illness for which the claim is made. 
+ 
+Proof of Terminal Illness satisfactory to the Company must be furnished to the Company during the lifetime of the Insured.  
+The Company has the right to call for an examination of the Insured and the evidence used in arriving at such diagnosis of 
+the Terminal Illness when and as often as may reasonably be required during the period when the claim is pending. An 
+independent acknowledged expert in the field of medicine concerned shall conduct this examination and we shall select 
+this expert. 
+ 
+*** End of page *** 
+ 
+
+--- Page 13 ---
+SAMPLE
+AIA International Limited 
+ 
+ 
+AIA Vitality Endorsement 
+ 
+01012017 ACAN P0105  
+ 
+AIA VITALITY ENDORSEMENT  
+ 
+ 
+This Endorsement is attached to and forms part of the Basic Policy and/or Supplementary Contract under AIA Vitality 
+Series as specifically designated and referred to in the Policy Information Page or AIA Vitality Membership Confirmation 
+Letter (“Designated Discounted Policy”). Except as otherwise provided in this Endorsement, all terms, conditions, 
+provisions and definitions of the Policy shall have full force and effect. If any of the provisions of this Endorsement is 
+inconsistent or in conflict with any other provisions of the Policy, the provisions of this Endorsement shall prevail to the 
+extent of any such inconsistency or conflict. 
+ 
+Unless otherwise defined or redefined in this Endorsement, words and expressions defined in the Basic Policy and/or 
+Supplementary Contract shall have the same meanings in this Endorsement. 
+ 
+Notwithstanding anything contained in the Policy and Policy Information Page to the contrary, it is hereby understood and 
+agreed that: 
+ 
+1. The following provisions shall be added under the section on PREMIUM PROVISIONS as set out in the Basic 
+Policy 
+ 
+“PREMIUM ADJUSTMENT TO THE DESIGNATED DISCOUNTED POLICY AVAILABLE UNDER 
+AIA VITALITY” 
+ 
+DEFINITIONS 
+ 
+These additional definitions shall apply: 
+ 
+“AIA Vitality” means the science-backed incentivized wellness programme administered, managed and 
+distributed by the Company separately in Hong Kong or Macau (as the case may be) to the Insured to promote 
+personal wellness and healthy lifestyles, which has its independent terms and conditions to govern a person’s 
+eligibility, reward and participation in the programme as well as the AIA Vitality Status. The Company shall have 
+the sole discretion to (1) modify AIA Vitality structure, make changes, in whole or in part, with or without notice, 
+to any aspect of AIA Vitality, benefits, rules, regulations, polices, procedures, conditions of participation or other 
+features and any other terms and conditions communicated in any other materials relating to AIA Vitality, even 
+though changes may affect the points earned (or to be earned) and accumulated and the benefits entitlement; and 
+(2) terminate, suspend, cancel, deactivate, recall or revoke AIA Vitality (in whole or in part) at any time, upon 
+reasonable notice where it is possible and/or practical to give such notice.  Any revised version of the terms and 
+conditions shall be effective at the date of publication on the website, and available for download at AIA Vitality 
+website at www.aiavitality.com.hk. We also reserve the right to change our partners and benefits structure / 
+incentives / discounts / cash back and eligibility conditions at any time. AIA Vitality is not an insurance product 
+that falls under the jurisdiction of the insurance regulation. Moreover, the coverage of insured under the policy 
+shall remain unchanged no matter whether customer chooses to join AIA Vitality or not. 
+ 
+“AIA Vitality Insurance Premium Discount” means that the discount that the Owner could enjoy with respect 
+to  the Designated Discounted Policy  as a result of the Insured’s  joining of and participation in the AIA Vitality, 
+according to the adjustment mechanism stated hereinafter on the basis of AIA Vitality Insurance Premium 
+Discount Percentage and Current Year Insurance Premium Adjustment Percentage.  
+ 
+“AIA Vitality Insurance Premium Discount Percentage” means the percentage applied at the inception of the 
+Policy or at each Policy Anniversary beginning from the first (1st) Policy Anniversary (as the case may be). 
+ 
+“AIA Vitality Status” shall refer to the status level achieved by the Insured as a member of AIA Vitality in 
+accordance with the number of AIA Vitality points he/she may have earned and accumulated during a 
+membership year in accordance with the prevailing rules of AIA Vitality. Members start on “Bronze” level at the 
+inception of the AIA Vitality. 
+ 
+“Applicable Insurance Premium” means the standard premium amount/rate payable on a proposed insured who 
+is classified as standard risk for the Designated Discounted Policy before any adjustment due to AIA Vitality 
+Insurance Premium Discount or otherwise.  
+ 
+*** End of page *** 
+
+--- Page 14 ---
+SAMPLE
+AIA International Limited 
+ 
+ 
+AIA Vitality Endorsement 
+ 
+01012017 ACAN P0205  
+ 
+“Current Year Insurance Premium Adjustment Percentage” means the percentage corresponding with the 
+AIA Vitality Status achieved by the Insured as at each Policy Anniversary (beginning from the first (1st) Policy 
+Anniversary). 
+ 
+“Policy Year” means each twelve-month period starting on the Policy Date. 
+ 
+PREMIUM ADJUSTMENT 
+ 
+Whilst this Endorsement is still in force, the premiums payable for the Designated Discounted Policy after AIA 
+Vitality Insurance Premium Discount will be equal to the Applicable Insurance Premium minus AIA Vitality 
+Insurance Premium Discount, plus any extra premiums or premium loading that may be payable due to extra 
+mortality, morbidity and/or other ratings (if any). 
+ 
+For the avoidance of doubt,  
+ 
+(a) 
+any extra premiums or premium loading due to any extra mortality, morbidity or other ratings will not be 
+subject to the premium adjustment by the application of the AIA Vitality Insurance Premium Discount 
+Percentage due to the AIA Vitality Insurance Premium Discount; and 
+ 
+(b) 
+the AIA Vitality Insurance Premium Discount does not apply to another policy, contract and rider other 
+than the Designated Discounted Policy. 
+ 
+AIA Vitality Insurance Premium Discount Percentage applied at the inception of the Policy = 10% 
+ 
+AIA Vitality Insurance Premium Discount Percentage applied at current Policy Anniversary = AIA 
+Vitality Insurance Premium Discount Percentage applied at the inception of the Policy or the Policy 
+Anniversary immediately before the current Policy Anniversary (whichever is later) + Current Year 
+Insurance Premium Adjustment Percentage 
+ 
+In the event that the Insured does not have an AIA Vitality Status as at the day of any Policy Anniversary for 
+whatsoever reason, including but not limited to termination of the Insured’s AIA Vitality membership, no AIA 
+Vitality Insurance Premium Discount Percentage will be applied at that Policy Anniversary. 
+ 
+Notwithstanding the above, the AIA Vitality Insurance Premium Discount Percentage applied at any Policy 
+Anniversary shall not be more than the Maximum AIA Vitality Insurance Premium Discount Percentage and shall 
+not be less than the Minimum AIA Vitality Insurance Premium Discount Percentage as set out below. 
+ 
+Minimum AIA Vitality Insurance Premium Discount Percentage = 0% 
+Maximum AIA Vitality Insurance Premium Discount Percentage = 15% 
+ 
+The Current Year Insurance Premium Adjustment Percentage applied will be based on the Insured’s AIA Vitality 
+Status as at the day of relevant Policy Anniversary. 
+ 
+AIA Vitality Status 
+  
+Current Year Insurance Premium Adjustment Percentage 
+Bronze   
+ 
+ 
+-2% 
+Silver   
+ 
+ 
+-1% 
+Gold  
+ 
+ 
+ 
+ 0% 
+Platinum  
+ 
+ 
++1% 
+ 
+TERMINATION OF THE PREMIUM ADJUSTMENT PROVISONS 
+ 
+The provisions on Premium Adjustment shall end and terminate concurrently if and when the Insured’s 
+membership of AIA Vitality is terminated for whatsoever reason(s), and no AIA Vitality Insurance Premium 
+Discount shall be available to the Policy Year on which such termination of membership falls. 
+ 
+*** End of page *** 
+ 
+ 
+
+--- Page 15 ---
+SAMPLE
+AIA International Limited 
+ 
+ 
+AIA Vitality Endorsement 
+ 
+01012017 ACAN P0305  
+ 
+2. The following provisions shall be added under the clause on REINSTATEMENT under the section on 
+PREMIUM PROVISIONS as set out in the Basic Policy: 
+ 
+“The AIA Vitality Insurance Premium Discount Percentage which shall be applied on each of the Policy 
+Anniversaries in the period between the due date on which default of premium occurred and the reinstatement 
+date shall be subject to the Company’s rule prevailing from time to time.” 
+ 
+Important Notice: Please read carefully the Policy Information Page or AIA Vitality Membership Confirmation Letter to 
+find out which Basic Policy or Supplementary Contract is offered under AIA Vitality Series and hence a Designated 
+Discounted Policy which allows you to enjoy AIA Vitality Insurance Premium Discount. The benefits offered by our 
+partners under AIA Vitality are available for redemption in Hong Kong and Macau. In case of doubt, please contact our 
+Customer Services Centre or your sales representative. 
+ 
+*** End of page *** 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- Page 16 ---
+SAMPLE
+AIA International Limited 
+ 
+ 
+AIA Vitality Endorsement 
+ 
+01012017 ACAN P0405  
+ 
+ 
+AIA VITALITY ILLUSTRATION 
+ 
+AIA VITALITY INSURANCE PREMIUM DISCOUNT 
+ 
+There are four (4) types of AIA Vitality Status, depending on the total number of points being earned and accumulated by 
+a member for each membership year. Once you have joined AIA Vitality and enrol in this AIA Vitality Series product, you 
+are entitled to an immediate upfront 10% AIA Vitality Insurance Premium Discount for the first Policy Year. For each 
+subsequent Policy Year, the AIA Vitality Insurance Premium Discount may increase or decrease depending on the 
+Insured’s AIA Vitality Status as shown in the below table. 
+ 
+AIA Vitality Status 
+Current Year Insurance Premium Adjustment 
+Percentage  
+Bronze 
+Decrease by 2% 
+Silver 
+Decrease by 1% 
+Gold 
+No Adjustment 
+Platinum 
+Increase by 1% 
+ 
+HOW TO CALCULATE MY FUTURE PAYMENTS? 
+ 
+The below tables illustrate the annual premium required for the first seven (7) policy years based on the highest and lowest 
+attainment of AIA Vitality Status by the Insured. Thereafter your annual premium will continue to be calculated in 
+accordance with your AIA Vitality Status achieved on each subsequent Policy Anniversary. No AIA Vitality Insurance 
+Premium Discount will be offered if the Insured’s AIA Vitality membership is terminated for whatever reason. The annual 
+premium as shown in the table is “fictitious” for illustrative purposes.  
+ 
+BEST SCENARIO 
+ 
+ 
+We assume the Insured achieves “Platinum” AIA Vitality Status (i.e. highest status) at the end of each subsequent 
+Policy Year, starting from Policy Year one (1) 
+ 
+The maximum attainable AIA Vitality Insurance Premium Discount is 15% and it can be attained starting from Policy 
+Year six (6) 
+ 
+ 
+Policy 
+Year 
+  
+AIA Vitality 
+Insurance 
+Premium Discount 
+for the previous 
+year (%) 
+ 
+Adjustment to the 
+AIA Vitality 
+Insurance Premium 
+Discount based on 
+AIA Vitality Status 
+(%) 
+ 
+AIA Vitality 
+Insurance 
+Premium 
+Discount for the 
+current year (%) 
+ 
+Annual Premium i 
+ 
+ 
+Discounted Annual 
+Premium i, ii 
+ 
+1 
+N/A 
+N/A 
+10% 
+1,000 
+900 
+2 
+10% 
++1% 
+11% 
+1,100 
+979 
+3 
+11% 
++1% 
+12% 
+1,200 
+1,056 
+4 
+12% 
++1% 
+13% 
+1,300 
+1,131 
+5 
+13% 
++1% 
+14% 
+1,400 
+1,204 
+6 
+14% 
++1% 
+15% 
+1,500 
+1,275 
+7 
+15% 
++1% 
+15% 
+1,600 
+1,360 
+ 
+*** End of page *** 
+
+--- Page 17 ---
+SAMPLE
+AIA International Limited 
+ 
+ 
+AIA Vitality Endorsement 
+ 
+01012017 ACAN P0505  
+ 
+WORST SCENARIO 
+ 
+ 
+We assume the Insured achieves “Bronze” AIA Vitality Status (i.e. lowest status) at the end of each subsequent Policy 
+Year, starting from Policy Year one (1) 
+ 
+No AIA Vitality Insurance Premium Discount will be offered starting from Policy Year six (6) 
+ 
+ 
+Policy 
+Year 
+ 
+AIA Vitality 
+Insurance 
+Premium 
+Discount for the 
+previous year (%) 
+ 
+Adjustment to the 
+AIA Vitality 
+Insurance Premium 
+Discount based on 
+AIA Vitality Status 
+(%) 
+  
+AIA Vitality 
+Insurance 
+Premium 
+Discount for the 
+current year (%) 
+ 
+Annual Premium i 
+ 
+ 
+Discounted Annual 
+Premium i, ii 
+ 
+1 
+N/A 
+N/A 
+10% 
+1,000 
+900 
+2 
+10% 
+-2% 
+8% 
+1,100 
+1,012 
+3 
+8% 
+-2% 
+6% 
+1,200 
+1,128 
+4 
+6% 
+-2% 
+4% 
+1,300 
+1,248 
+5 
+4% 
+-2% 
+2% 
+1,400 
+1,372 
+6 
+2% 
+-2% 
+0% 
+1,500 
+1,500 
+7 
+0% 
+-2% 
+0% 
+1,600 
+1,600 
+ 
+Remarks: 
+i. 
+All premiums (including renewal premiums) shown above are based on the standard premium rate and do not 
+include any extra premiums due to loading. Moreover, the above renewal premiums payable, for the sake of easy 
+understanding, are assumed as illustrated in above table, and in reality, the renewal premiums payable in the 
+subsequent Policy Years may adjust. The actual renewal premiums will be calculated according to the Insured’s 
+attained age and the applicable premium rate at the time of renewal. Such premium rate is non-guaranteed and 
+subject to revision by the Company from time to time. 
+ii. 
+The AIA Vitality Insurance Premium Discount is only applicable to standard premiums and shall not apply to any 
+extra premiums due to loading. 
+ 
+Important Notes: 
+1) 
+The AIA Vitality Insurance Premium Discount is only applicable to the specific Basic Policy or Supplementary 
+Contract. The AIA Vitality Insurance Premium Discount is not extended to any other Basic Policy or Supplementary 
+Contracts unless it is specifically stated otherwise. Please check the illustration of the other Basic Policy or 
+Supplementary Contracts, and contact us if you have any doubt.  
+2) 
+The AIA Vitality Insurance Premium Discount is capped at 15% and floored at 0%. 
+3) 
+The insured person has to be an AIA Vitality member in order to enjoy the AIA Vitality Insurance Premium 
+Discount.  
+4) 
+An annual membership fee will be charged for AIA Vitality and a member has to renew the AIA Vitality 
+membership annually in order to enjoy AIA Vitality Insurance Premium Discount in the subsequent policy years. 
+5) 
+If the AIA Vitality member is insured by more than one policy under the AIA Vitality Series, the AIA Vitality 
+Insurance Premium Discount applied should be calculated independently in accordance with each policy.  
+ 
+*** End of page *** 
+ 
+ 
+ 
+ 
