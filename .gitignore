@@ -121,5 +121,6 @@ parser_trees.json
 test-*.js
 test-*.py
 
-# PDF files (for demo)
+# PDF files (except demo files)
 *.pdf
+!demo-files/*.pdf
