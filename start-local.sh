@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Simple local startup script
-echo "🚀 Starting Document Hierarchy Tree Editor locally..."
+echo "🪓 Starting Lumberjack locally..."
 
 # Colors for output
 GREEN='\033[0;32m'

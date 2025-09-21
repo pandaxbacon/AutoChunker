@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Document Hierarchy Tree Editor Setup Script
-echo "🌲 Setting up Document Hierarchy Tree Editor..."
+# Lumberjack Setup Script
+echo "🪓 Setting up Lumberjack Document Parser..."
 
 # Colors for output
 GREEN='\033[0;32m'
@@ -29,19 +29,19 @@ fi
 
 echo -e "${GREEN}✅ Prerequisites check passed${NC}"
 
-# Install Python dependencies in virtual environment
-echo -e "${YELLOW}📦 Creating Python virtual environment...${NC}"
-python3 -m venv venv
-
-echo -e "${YELLOW}📦 Installing Python dependencies...${NC}"
-source venv/bin/activate && pip install 'markitdown[all]'
-
-if [ $? -ne 0 ]; then
-    echo -e "${RED}❌ Failed to install Python dependencies${NC}"
-    exit 1
+# Setup Firebase credentials
+echo -e "${YELLOW}🔐 Setting up Firebase credentials...${NC}"
+if [ ! -f "client/.env" ]; then
+    if [ -f "client/env.example" ]; then
+        cp client/env.example client/.env
+        echo -e "${YELLOW}⚠️  Please edit client/.env with your Firebase credentials${NC}"
+    else
+        echo -e "${RED}❌ env.example not found${NC}"
+        exit 1
+    fi
+else
+    echo -e "${GREEN}✅ Firebase credentials already configured${NC}"
 fi
-
-echo -e "${GREEN}✅ Python dependencies installed${NC}"
 
 # Install Node.js dependencies
 echo -e "${YELLOW}📦 Installing Node.js dependencies...${NC}"
@@ -62,12 +62,9 @@ mkdir -p server/uploads
 
 echo -e "${GREEN}🎉 Setup complete!${NC}"
 echo ""
-echo -e "${YELLOW}To start the application:${NC}"
-echo "  npm run dev"
+echo -e "${YELLOW}Next steps:${NC}"
+echo "1. Edit client/.env with your Firebase credentials"
+echo "2. For local development: ./start-local.sh"
+echo "3. For production deployment: ./deploy.sh"
 echo ""
-echo -e "${YELLOW}Then open your browser to:${NC}"
-echo "  http://localhost:3000"
-echo ""
-echo -e "${YELLOW}For production build:${NC}"
-echo "  npm run build"
-echo "  npm start"
+echo -e "${YELLOW}Live demo:${NC} https://lumberjack-23104.web.app"

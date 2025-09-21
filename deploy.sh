@@ -30,7 +30,7 @@ cd ..
 
 # Deploy to Firebase
 echo -e "${YELLOW}🚀 Deploying to Firebase...${NC}"
-firebase deploy --only hosting,storage
+firebase deploy --only hosting,storage,functions
 
 if [ $? -eq 0 ]; then
     echo -e "${GREEN}🎉 Deployment successful!${NC}"
