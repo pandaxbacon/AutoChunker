@@ -12,6 +12,11 @@ client/build/
 .env.development.local
 .env.test.local
 .env.production.local
+client/.env
+client/.env.local
+client/.env.development.local
+client/.env.test.local
+client/.env.production.local
 
 # Logs
 npm-debug.log*
