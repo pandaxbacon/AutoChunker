@@ -129,3 +129,6 @@ test-*.py
 # PDF files (except demo files)
 *.pdf
 !demo-files/*.pdf
+
+# Screenshots (include PNG files in screenshots folder)
+# Note: Screenshots are included in the repository for documentation
