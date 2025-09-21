@@ -124,22 +124,21 @@ The application uses these 4 Firebase Function endpoints:
 
 ## Prerequisites
 
-Before running this application, make sure you have:
+**For Firebase Cloud Deployment:**
+- Firebase Project with Blaze Plan (~$1-5/month)
+- Firebase CLI: `npm install -g firebase-tools`
+- Git for cloning the repository
 
-1. **Node.js** (version 16 or higher)
-2. **Firebase Project** with Blaze Plan (see Firebase Setup above)
-3. **Firebase CLI**: `npm install -g firebase-tools`
-4. **Git** for cloning the repository
-
-**For Local Development Only:**
-- **Python 3** (for local document parsing)
-- **pip** (Python package manager)
+**For Local Self-Hosted Deployment:**
+- Docker + Docker Compose (recommended)
+- OR Node.js 18+ + Python 3.8+
+- Git for cloning the repository
 
 ## Installation
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/pandaxbacon/AutoChunker.git
    cd AutoChunker
    ```
 
@@ -390,17 +389,6 @@ cd deployments/local-selfhosted
 
 **Detailed Setup:** See [Local Self-Hosted README](deployments/local-selfhosted/README.md)
 
-## 🚀 Legacy Deployment (Original)
-
-```bash
-# Deploy everything (hosting + functions + storage rules)
-./deploy.sh
-
-# Or deploy individually  
-firebase deploy --only hosting
-firebase deploy --only functions
-firebase deploy --only storage
-```
 
 ## 🤝 Contributing
 

@@ -1,20 +1,35 @@
 {
-  "name": "document-hierarchy-tree-editor",
+  "name": "lumberjack",
   "version": "1.0.0",
-  "description": "A web app to upload documents, convert to Markdown, and edit hierarchy trees for better chunking",
-  "main": "server/index.js",
+  "description": "🪓 Document Hierarchy Tree Editor for Vector Databases",
+  "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
-    "server:dev": "cd server && npm run dev",
-    "client:dev": "cd client && npm run dev",
-    "build": "cd client && npm run build",
-    "start": "cd server && npm start",
-    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+    "deploy": "./deploy.sh",
+    "deploy:firebase": "cd deployments/firebase-cloud && ./deploy.sh",
+    "deploy:local": "cd deployments/local-selfhosted && ./start.sh",
+    "dev:firebase": "cd deployments/firebase-cloud && firebase emulators:start",
+    "dev:local": "cd deployments/local-selfhosted && ./start.sh"
   },
-  "keywords": ["document", "markdown", "chunking", "hierarchy", "tree", "editor"],
-  "author": "Your Name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pandaxbacon/AutoChunker.git"
+  },
+  "keywords": [
+    "document-parser",
+    "pdf-parser",
+    "markdown",
+    "tree-editor",
+    "vector-database",
+    "ai",
+    "machine-learning",
+    "document-processing",
+    "firebase",
+    "docker",
+    "self-hosted"
+  ],
+  "author": "Terry",
   "license": "MIT",
-  "devDependencies": {
-    "concurrently": "^8.2.2"
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

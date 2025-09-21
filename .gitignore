@@ -3,20 +3,15 @@ node_modules/
 */node_modules/
 
 # Build outputs
-client/dist/
-client/build/
+*/client/dist/
+*/client/build/
+dist/
+build/
 
 # Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-client/.env
-client/.env.local
-client/.env.development.local
-client/.env.test.local
-client/.env.production.local
+.env*
+*/client/.env*
+deployments/*/client/.env*
 
 # Logs
 npm-debug.log*
@@ -84,8 +79,9 @@ jspm_packages/
 .vscode-test
 
 # Temporary files
-server/uploads/
-server/temp_convert.py
+*/server/uploads/
+*/server/temp_convert.py
+deployments/*/server/uploads/
 
 # OS generated files
 .DS_Store
@@ -111,20 +107,23 @@ venv/
 
 # Firebase
 .firebaserc
-firebase-debug.log
-firebase-debug.*.log
-functions/__pycache__/
+firebase-debug.log*
+*/functions/__pycache__/
+deployments/firebase-cloud/.firebaserc
+deployments/firebase-cloud/firebase-debug.log*
 
 # Testing and demo files
 parser_outputs/
 tree_images/
-server/pdf_previews/
-server/uploads/
+*/server/pdf_previews/
 PARSER_COMPARISON.md
 TREE_ANALYSIS_RESULTS.md
 parser_trees.json
 test-*.js
 test-*.py
+
+# Docker
+docker-compose.override.yml
 
 # PDF files (except demo files)
 *.pdf
